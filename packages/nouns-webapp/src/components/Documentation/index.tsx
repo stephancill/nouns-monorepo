@@ -16,6 +16,9 @@ const Documentation = () => {
   const playgroundLink = (
     <Link text={<Trans>Playground</Trans>} url="/playground" leavesPage={false} />
   );
+  const syntheticNounsLink = (
+    <Link text={<Trans>Synthetic Noun</Trans>} url="/synthetic-nouns" leavesPage={false} />
+  );
   const publicDomainLink = (
     <Link
       text={<Trans>public domain</Trans>}
@@ -47,7 +50,8 @@ const Documentation = () => {
           </p>
           <p className={classes.aboutText} style={{ paddingBottom: '4rem' }}>
             <Trans>
-              Learn more below, or start creating Nouns off-chain using the {playgroundLink}.
+              Learn more below, or start creating Nouns off-chain using the {playgroundLink}. You
+              can also claim your own {syntheticNounsLink} generated from your wallet address.
             </Trans>
           </p>
         </div>
